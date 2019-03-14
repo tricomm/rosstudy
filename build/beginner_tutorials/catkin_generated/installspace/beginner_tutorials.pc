@@ -1,0 +1,8 @@
+prefix=/home/zhangsiyu/rosstudy/install
+
+Name: beginner_tutorials
+Description: Description of beginner_tutorials
+Version: 0.0.0
+Cflags: -I/home/zhangsiyu/rosstudy/install/include
+Libs: -L/home/zhangsiyu/rosstudy/install/lib 
+Requires: message_runtime

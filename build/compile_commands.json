@@ -1,0 +1,97 @@
+[
+{
+  "directory": "/home/zhangsiyu/rosstudy/build/gtest",
+  "command": "/usr/bin/c++   -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgmock_EXPORTS -I/usr/src/gmock/include -I/usr/src/gmock -I/usr/src/gtest/include -I/usr/src/gtest  -fPIC    -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gmock.dir/usr/src/gtest/src/gtest-all.cc.o -c /usr/src/gtest/src/gtest-all.cc",
+  "file": "/usr/src/gtest/src/gtest-all.cc"
+},
+{
+  "directory": "/home/zhangsiyu/rosstudy/build/gtest",
+  "command": "/usr/bin/c++   -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgmock_EXPORTS -I/usr/src/gmock/include -I/usr/src/gmock -I/usr/src/gtest/include -I/usr/src/gtest  -fPIC    -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gmock.dir/src/gmock-all.cc.o -c /usr/src/gmock/src/gmock-all.cc",
+  "file": "/usr/src/gmock/src/gmock-all.cc"
+},
+{
+  "directory": "/home/zhangsiyu/rosstudy/build/gtest",
+  "command": "/usr/bin/c++   -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgmock_main_EXPORTS -I/usr/src/gmock/include -I/usr/src/gmock -I/usr/src/gtest/include -I/usr/src/gtest  -fPIC    -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gmock_main.dir/usr/src/gtest/src/gtest-all.cc.o -c /usr/src/gtest/src/gtest-all.cc",
+  "file": "/usr/src/gtest/src/gtest-all.cc"
+},
+{
+  "directory": "/home/zhangsiyu/rosstudy/build/gtest",
+  "command": "/usr/bin/c++   -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgmock_main_EXPORTS -I/usr/src/gmock/include -I/usr/src/gmock -I/usr/src/gtest/include -I/usr/src/gtest  -fPIC    -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gmock_main.dir/src/gmock-all.cc.o -c /usr/src/gmock/src/gmock-all.cc",
+  "file": "/usr/src/gmock/src/gmock-all.cc"
+},
+{
+  "directory": "/home/zhangsiyu/rosstudy/build/gtest",
+  "command": "/usr/bin/c++   -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgmock_main_EXPORTS -I/usr/src/gmock/include -I/usr/src/gmock -I/usr/src/gtest/include -I/usr/src/gtest  -fPIC    -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gmock_main.dir/src/gmock_main.cc.o -c /usr/src/gmock/src/gmock_main.cc",
+  "file": "/usr/src/gmock/src/gmock_main.cc"
+},
+{
+  "directory": "/home/zhangsiyu/rosstudy/build/gtest/gtest",
+  "command": "/usr/bin/c++   -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgtest_EXPORTS -I/usr/src/gtest/include -I/usr/src/gtest  -fPIC    -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gtest.dir/src/gtest-all.cc.o -c /usr/src/gtest/src/gtest-all.cc",
+  "file": "/usr/src/gtest/src/gtest-all.cc"
+},
+{
+  "directory": "/home/zhangsiyu/rosstudy/build/gtest/gtest",
+  "command": "/usr/bin/c++   -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgtest_main_EXPORTS -I/usr/src/gtest/include -I/usr/src/gtest  -fPIC    -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gtest_main.dir/src/gtest_main.cc.o -c /usr/src/gtest/src/gtest_main.cc",
+  "file": "/usr/src/gtest/src/gtest_main.cc"
+},
+{
+  "directory": "/home/zhangsiyu/rosstudy/build/beginner_tutorials",
+  "command": "/usr/bin/c++   -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"beginner_tutorials\\\" -I/home/zhangsiyu/rosstudy/devel/include -I/opt/ros/kinetic/include -I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/home/zhangsiyu/rosstudy/src/beginner_tutorials/include    -std=c++17 -o CMakeFiles/along2.dir/src/along2.cpp.o -c /home/zhangsiyu/rosstudy/src/beginner_tutorials/src/along2.cpp",
+  "file": "/home/zhangsiyu/rosstudy/src/beginner_tutorials/src/along2.cpp"
+},
+{
+  "directory": "/home/zhangsiyu/rosstudy/build/beginner_tutorials",
+  "command": "/usr/bin/c++   -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"beginner_tutorials\\\" -I/home/zhangsiyu/rosstudy/devel/include -I/opt/ros/kinetic/include -I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/home/zhangsiyu/rosstudy/src/beginner_tutorials/include    -std=c++17 -o CMakeFiles/along1.dir/src/along1.cpp.o -c /home/zhangsiyu/rosstudy/src/beginner_tutorials/src/along1.cpp",
+  "file": "/home/zhangsiyu/rosstudy/src/beginner_tutorials/src/along1.cpp"
+},
+{
+  "directory": "/home/zhangsiyu/rosstudy/build/beginner_tutorials",
+  "command": "/usr/bin/c++   -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"beginner_tutorials\\\" -I/home/zhangsiyu/rosstudy/devel/include -I/opt/ros/kinetic/include -I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/home/zhangsiyu/rosstudy/src/beginner_tutorials/include    -std=c++17 -o CMakeFiles/basic_shapes.dir/src/basic_shapes.cpp.o -c /home/zhangsiyu/rosstudy/src/beginner_tutorials/src/basic_shapes.cpp",
+  "file": "/home/zhangsiyu/rosstudy/src/beginner_tutorials/src/basic_shapes.cpp"
+},
+{
+  "directory": "/home/zhangsiyu/rosstudy/build/beginner_tutorials",
+  "command": "/usr/bin/c++   -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"beginner_tutorials\\\" -I/home/zhangsiyu/rosstudy/devel/include -I/opt/ros/kinetic/include -I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/home/zhangsiyu/rosstudy/src/beginner_tutorials/include    -std=c++17 -o CMakeFiles/listener.dir/src/listener.cpp.o -c /home/zhangsiyu/rosstudy/src/beginner_tutorials/src/listener.cpp",
+  "file": "/home/zhangsiyu/rosstudy/src/beginner_tutorials/src/listener.cpp"
+},
+{
+  "directory": "/home/zhangsiyu/rosstudy/build/beginner_tutorials",
+  "command": "/usr/bin/c++   -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"beginner_tutorials\\\" -I/home/zhangsiyu/rosstudy/devel/include -I/opt/ros/kinetic/include -I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/home/zhangsiyu/rosstudy/src/beginner_tutorials/include    -std=c++17 -o CMakeFiles/add_two_ints_server.dir/src/add_two_ints_server.cpp.o -c /home/zhangsiyu/rosstudy/src/beginner_tutorials/src/add_two_ints_server.cpp",
+  "file": "/home/zhangsiyu/rosstudy/src/beginner_tutorials/src/add_two_ints_server.cpp"
+},
+{
+  "directory": "/home/zhangsiyu/rosstudy/build/beginner_tutorials",
+  "command": "/usr/bin/c++   -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"beginner_tutorials\\\" -I/home/zhangsiyu/rosstudy/devel/include -I/opt/ros/kinetic/include -I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/home/zhangsiyu/rosstudy/src/beginner_tutorials/include    -std=c++17 -o CMakeFiles/alongpro.dir/src/alongpro_tf_listener.cpp.o -c /home/zhangsiyu/rosstudy/src/beginner_tutorials/src/alongpro_tf_listener.cpp",
+  "file": "/home/zhangsiyu/rosstudy/src/beginner_tutorials/src/alongpro_tf_listener.cpp"
+},
+{
+  "directory": "/home/zhangsiyu/rosstudy/build/beginner_tutorials",
+  "command": "/usr/bin/c++   -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"beginner_tutorials\\\" -I/home/zhangsiyu/rosstudy/devel/include -I/opt/ros/kinetic/include -I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/home/zhangsiyu/rosstudy/src/beginner_tutorials/include    -std=c++17 -o CMakeFiles/talker123.dir/src/talker123.cpp.o -c /home/zhangsiyu/rosstudy/src/beginner_tutorials/src/talker123.cpp",
+  "file": "/home/zhangsiyu/rosstudy/src/beginner_tutorials/src/talker123.cpp"
+},
+{
+  "directory": "/home/zhangsiyu/rosstudy/build/beginner_tutorials",
+  "command": "/usr/bin/c++   -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"beginner_tutorials\\\" -I/home/zhangsiyu/rosstudy/devel/include -I/opt/ros/kinetic/include -I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/home/zhangsiyu/rosstudy/src/beginner_tutorials/include    -std=c++17 -o CMakeFiles/add_two_ints_client.dir/src/add_two_ints_client.cpp.o -c /home/zhangsiyu/rosstudy/src/beginner_tutorials/src/add_two_ints_client.cpp",
+  "file": "/home/zhangsiyu/rosstudy/src/beginner_tutorials/src/add_two_ints_client.cpp"
+},
+{
+  "directory": "/home/zhangsiyu/rosstudy/build/learning_tf",
+  "command": "/usr/bin/c++   -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"learning_tf\\\" -I/opt/ros/kinetic/include -I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp    -o CMakeFiles/points_and_lines.dir/src/points_and_lines.cpp.o -c /home/zhangsiyu/rosstudy/src/learning_tf/src/points_and_lines.cpp",
+  "file": "/home/zhangsiyu/rosstudy/src/learning_tf/src/points_and_lines.cpp"
+},
+{
+  "directory": "/home/zhangsiyu/rosstudy/build/learning_tf",
+  "command": "/usr/bin/c++   -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"learning_tf\\\" -I/opt/ros/kinetic/include -I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp    -o CMakeFiles/frame_tf_broadcaster.dir/src/frame_tf_broadcaster.cpp.o -c /home/zhangsiyu/rosstudy/src/learning_tf/src/frame_tf_broadcaster.cpp",
+  "file": "/home/zhangsiyu/rosstudy/src/learning_tf/src/frame_tf_broadcaster.cpp"
+},
+{
+  "directory": "/home/zhangsiyu/rosstudy/build/learning_tf",
+  "command": "/usr/bin/c++   -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"learning_tf\\\" -I/opt/ros/kinetic/include -I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp    -o CMakeFiles/turtle_tf_listener.dir/src/turtle_tf_listener.cpp.o -c /home/zhangsiyu/rosstudy/src/learning_tf/src/turtle_tf_listener.cpp",
+  "file": "/home/zhangsiyu/rosstudy/src/learning_tf/src/turtle_tf_listener.cpp"
+},
+{
+  "directory": "/home/zhangsiyu/rosstudy/build/learning_tf",
+  "command": "/usr/bin/c++   -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"learning_tf\\\" -I/opt/ros/kinetic/include -I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp    -o CMakeFiles/turtle_tf_broadcaster.dir/src/turtle_tf_broadcaster.cpp.o -c /home/zhangsiyu/rosstudy/src/learning_tf/src/turtle_tf_broadcaster.cpp",
+  "file": "/home/zhangsiyu/rosstudy/src/learning_tf/src/turtle_tf_broadcaster.cpp"
+}
+]
