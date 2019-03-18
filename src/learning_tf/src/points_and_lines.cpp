@@ -36,11 +36,11 @@ int main( int argc, char** argv )
 
 
 
-    // POINTS markers use x and y scale for width/height respectively
+    // POINTS markers use x and y scale for width/height respectively (方形的点)
     points.scale.x = 0.2;
     points.scale.y = 0.2;
 
-    // LINE_STRIP/LINE_LIST markers use only the x component of scale, for the line width
+    // LINE_STRIP/LINE_LIST markers use only the x component of scale, for the line width(线宽)
     line_strip.scale.x = 0.1;
     line_list.scale.x = 0.1;
 
@@ -63,19 +63,19 @@ int main( int argc, char** argv )
     // Create the vertices for the points and lines
     for (uint32_t i = 0; i < 100; ++i)
     {
-      float y = 5 * sin(f + i / 100.0f * 2 * M_PI);
+      float y = 5 * sin(f + i / 100.0f * 2 * M_PI);//通过f来移动
       float z = 5 * cos(f + i / 100.0f * 2 * M_PI);
 
       geometry_msgs::Point p;
-      p.x = (int32_t)i - 50;
+      p.x = (int32_t)i*0.1 - 50;
       p.y = y;
       p.z = z;
 
-      points.points.push_back(p);
-      line_strip.points.push_back(p);
+      points.points.push_back(p); //points 是一个个点
+      line_strip.points.push_back(p); //line strip 是折线
 
       // The line list needs two points for each line
-      line_list.points.push_back(p);
+      line_list.points.push_back(p); //一组线段每相邻两个点为一条线段
       p.z += 1.0;
       line_list.points.push_back(p);
     }

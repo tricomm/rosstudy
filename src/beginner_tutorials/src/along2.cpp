@@ -24,9 +24,9 @@ void getMsgFromlist(std::vector<geometry_msgs::Pose>::iterator point,geometry_ms
 
 const double PI=3.14159265359;
 const double ZERO = 0.2;
-const double interval = 0.25;//步长 两步之内是障碍物
-const double STEP = 0.25;
+const double interval = 0.25;//步长 三步之内是障碍物
 const double TIME_OUT = 3;
+const double FX = 1;//pro为1 2.5为0
 std::vector<geometry_msgs::Pose>::iterator itera_posts;//当前出发点T
 std::vector<geometry_msgs::Pose>::iterator itera_globle_posts;//当前出发点T
 std::vector <geometry_msgs::Pose> posts; //从文件中读到
@@ -98,35 +98,7 @@ inline void gotoLocalTPlusI(int i)
             <<"y "<<now_pose.pose.position.y<<std::endl;
   }
 }
-// //拆分线段
-//  std::vector<geometry_msgs::Pose> IntervalPoint(geometry_msgs::Pose line_begin,geometry_msgs::Pose line_end){
-//     std::cout<<"输入"<<line_begin.position.x<<' '<<line_begin.position.y<<"到"
-//     <<line_end.position.x<<' '<<line_end.position.y<<"拆分结果为:"<<std::endl;
 
-//     std::vector< geometry_msgs::Pose > result;
-//     geometry_msgs::Pose current_pose;
-//     current_pose.position.x=line_begin.position.x;
-//     current_pose.position.y=line_begin.position.y;
-//     current_pose.orientation=line_begin.orientation;
-//     double interval_x,interval_y;
-//     double distance;
-//     distance=sqrt(pow((line_end.position.x-line_begin.position.x),2)+pow((line_end.position.y-line_begin.position.y),2));
-//     interval_x=(line_end.position.x-line_begin.position.x)*interval/distance;
-//     interval_y=(line_end.position.y-line_begin.position.y)*interval/distance;
-//     while(current_pose.position.x<=line_end.position.x&&current_pose.position.y<=line_end.position.y){
-//       result.push_back(current_pose);
-//       current_pose.position.x+=interval_x;
-//       current_pose.position.y+=interval_y;
-//       current_pose.orientation=line_begin.orientation;
-//     }
-//     if(line_end.position.x!=current_pose.position.x&&line_end.position.y!=current_pose.position.y)
-//       result.push_back(line_end);
-    
-//     for(unsigned int i=0;i<result.size();++i){
-//       std::cout<<result[i].position.x<<","<<result[i].position.y<<std::endl;
-//     }
-//     return result;
-// }
 //拆分线段2.0
 std::vector<geometry_msgs::Pose> IntervalPoint(geometry_msgs::Pose line_begin,geometry_msgs::Pose line_end){
    std::cout<<"输入"<<line_begin.position.x<<' '<<line_begin.position.y<<"到"
@@ -142,7 +114,7 @@ std::vector<geometry_msgs::Pose> IntervalPoint(geometry_msgs::Pose line_begin,ge
     distance=sqrt(pow((line_end.position.x-line_begin.position.x),2)+pow((line_end.position.y-line_begin.position.y),2));
     interval_x=(line_end.position.x-line_begin.position.x)*interval/distance;
     interval_y=(line_end.position.y-line_begin.position.y)*interval/distance;
-    while(point2PointDistance(current_pose,line_end)>STEP){//STEP是最小距离
+    while(point2PointDistance(current_pose,line_end)>interval){//STEP是最小距离
       result.push_back(current_pose);
       current_pose.position.x+=interval_x;
       current_pose.position.y+=interval_y;
@@ -152,6 +124,8 @@ std::vector<geometry_msgs::Pose> IntervalPoint(geometry_msgs::Pose line_begin,ge
 
     if(line_end.position.x!=current_pose.position.x||line_end.position.y!=current_pose.position.y)//修改2
       result.push_back(line_end);
+
+    
     for(unsigned int i=0;i<result.size();++i){
       std::cout<<result[i].position.x<<","<<result[i].position.y<<std::endl;
     }
@@ -199,7 +173,7 @@ void scanCallback(const sensor_msgs::LaserScanConstPtr scan){
   //std::cout<<"theta2:"<<theta2<<std::endl;
   if(theta2>PI)theta2-=2*PI;
   else if(theta2<-PI)theta2+=2*PI;
-  int Pranges=180-theta2-30;//自身与目标连线正负30度 雷达数据开始的数组下表
+  int Pranges=180-theta2-30-FX*90;//自身与目标连线正负30度 雷达数据开始的数组下表
   int obstac_num=0;
   for(int i=0;i<60;++i)
   {
